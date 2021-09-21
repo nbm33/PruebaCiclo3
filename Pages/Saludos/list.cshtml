@@ -1,0 +1,16 @@
+﻿@page
+@model HolaWeb.App.Frontend.Pages.listModel
+@{
+}
+<h1>Lista de Saludos</h1>
+
+<Table class="table">
+    @foreach(var saludo in Model.ListaSaludos)
+    {
+        <tr>
+            <td>@saludo</td>
+        </tr>
+    }
+</Table>
+
+
