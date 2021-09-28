@@ -14412,6 +14412,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/Pages/Saludos/Details.cshtml",
+      "TargetPath": "Pages\\Saludos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/Pages/Saludos/Edit.cshtml",
+      "TargetPath": "Pages\\Saludos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"

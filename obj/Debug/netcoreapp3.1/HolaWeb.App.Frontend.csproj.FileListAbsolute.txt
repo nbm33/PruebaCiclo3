@@ -35,3 +35,9 @@
 /Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/obj/Debug/netcoreapp3.1/HolaWeb.App.Frontend.genruntimeconfig.cache
 /Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/obj/Debug/netcoreapp3.1/HolaWeb.App.Frontend.csproj.CopyComplete
 /Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/obj/Debug/netcoreapp3.1/Razor/Pages/Saludos/list.cshtml.g.cs
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/bin/Debug/netcoreapp3.1/HolaWeb.App.Dominio.dll
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/bin/Debug/netcoreapp3.1/HolaWeb.App.Dominio.pdb
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/bin/Debug/netcoreapp3.1/HolaWeb.App.Persistencia.dll
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/bin/Debug/netcoreapp3.1/HolaWeb.App.Persistencia.pdb
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/obj/Debug/netcoreapp3.1/Razor/Pages/Saludos/Details.cshtml.g.cs
+/Users/Nicolas/HolaWeb/HolaWeb.App.Frontend/obj/Debug/netcoreapp3.1/Razor/Pages/Saludos/Edit.cshtml.g.cs
