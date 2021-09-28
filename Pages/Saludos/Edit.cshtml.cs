@@ -11,28 +11,42 @@ namespace HolaWeb.App.Frontend.Pages
 {
     public class EditModel : PageModel
     {
-       private readonly IRepositorioSaludos repositorioSaludos;
-       [BindProperty]
-       public Saludo Saludo { get; set; }
-       public EditModel(IRepositorioSaludos repositorioSaludos)
-       {
-           this.repositorioSaludos=repositorioSaludos;
-       }        
-       public IActionResult OnGet(int saludoId)
-       {
-           Saludo = repositorioSaludos.GetSaludoPorId(saludoId);
-           if(Saludo==null)
-           {
-               return RedirectToPage("./NotFound");
-           }
-           return Page();
-       }
+        private readonly IRepositorioSaludos repositorioSaludos;
+        [BindProperty]
+        public Saludo Saludo { get; set; }
+        public EditModel(IRepositorioSaludos repositorioSaludos)
+        {
+            this.repositorioSaludos = repositorioSaludos;
+        }
+        public IActionResult OnGet(int? saludoId)
+        {
+            if (saludoId.HasValue)
+            {
+                Saludo = repositorioSaludos.GetSaludoPorId(saludoId.Value);
+            }
+            else
+            {
+                Saludo = new Saludo();
+            }
+            if (Saludo == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            return Page();
+        }
 
         public IActionResult OnPost()
-       {
-           Saludo = repositorioSaludos.Update(Saludo);
-           return Page();
-       }
-   }
+        {
+            if(Saludo.Id>0)
+            {
+                Saludo = repositorioSaludos.Update(Saludo);
+            }
+            else
+            {
+                repositorioSaludos.Add(Saludo);
+            }
+            return Page();
+        }
+    }
 
 }
